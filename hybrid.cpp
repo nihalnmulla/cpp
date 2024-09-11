@@ -81,4 +81,9 @@ class SalesManager : public WageEmployee,public SalesEmployee{
 int main(){
 	SalesManager sm(101,8,500,23456,1,5000,10000);
 	sm.display();
+	Employee emp;
+	WageEmployee we;
+	SalesEmployee se;
+	cout<<sizeof(emp)<<" "<<sizeof(we)<<" "<<sizeof(se)<<" "<<sizeof(sm)<<endl;
+	cout<<sizeof(we.findSalary());
 }
